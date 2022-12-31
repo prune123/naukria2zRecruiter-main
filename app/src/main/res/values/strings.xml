@@ -1,0 +1,326 @@
+<resources>
+    <string name="app_name">NaukriA2Z-Recruiter</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="location">
+        <item>India</item>
+        <item>International</item>
+
+    </string-array>
+
+    <string name="Handicap">Can <b>Handicap</b> person apply for this job?</string>
+    <string-array name="Qualification">
+        <item>Class 10</item>
+        <item>Class 12</item>
+        <item>Diploma</item>
+        <item>Btech</item>
+        <item>Mtech</item>
+        <item>BA</item>
+        <item>BSC</item>
+        <item>PHD</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="class10">
+        <item>AC technician</item>
+        <item>HVAC technician</item>
+        <item>Plumber</item>
+        <item>Sales representative</item>
+        <item>Electrician</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="btech">
+        <item>Mechanical</item>
+        <item>Electrical</item>
+        <item>Civil</item>
+        <item>CSE</item>
+        <item>IT</item>
+        <item>Other</item>
+
+    </string-array>
+    <string-array name="Experience">
+
+        <item>0 year</item>
+        <item>1 year</item>
+        <item>2 year</item>
+        <item>3 year</item>
+        <item>4 year</item>
+        <item>5 year</item>
+        <item>6 year</item>
+        <item>7 year</item>
+
+        <item>8 year</item>
+        <item>9 year</item>
+        <item>10 year</item>
+        <item>11 year</item>
+        <item>12 year</item>
+        <item>13 year</item>
+        <item>14 year</item>
+        <item>15 year</item>
+
+        <item>16 year</item>
+        <item>17 year</item>
+        <item>18 year</item>
+        <item>19 year</item>
+        <item>20 year</item>
+
+    </string-array>
+
+    <string-array name="Experience1">
+
+        <item>1 year</item>
+        <item>2 year</item>
+        <item>3 year</item>
+        <item>4 year</item>
+        <item>5 year</item>
+        <item>6 year</item>
+        <item>7 year</item>
+
+        <item>8 year</item>
+        <item>9 year</item>
+        <item>10 year</item>
+        <item>11 year</item>
+        <item>12 year</item>
+        <item>13 year</item>
+        <item>14 year</item>
+        <item>15 year</item>
+
+        <item>16 year</item>
+        <item>17 year</item>
+        <item>18 year</item>
+        <item>19 year</item>
+        <item>20 year</item>
+        <item>20+ year</item>
+    </string-array>
+
+    <string-array name="JobType">
+        <item>Full time</item>
+        <item>Part time</item>
+        <item>Internship</item>
+    </string-array>
+    <string-array name="SoftwareKnowledge">
+        <item>Autocad</item>
+        <item>Revit</item>
+        <item>Solid</item>
+        <item>Excel</item>
+        <item>Microsoft word</item>
+        <item>PowerPoint</item>
+        <item>Hap</item>
+        <item>Other</item>
+
+    </string-array>
+    <string-array name="industry">
+        <item>HVAC</item>
+        <item>Electrical</item>
+        <item>Plumbing</item>
+        <item>Water Treatment</item>
+        <item>Fire Protection</item>
+        <item>IBMS</item>
+        <item>BIM</item>
+        <item>Architecture</item>
+        <item>Software</item>
+        <item>any industry</item>
+        <item>Others</item>
+
+    </string-array>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="Login">LOGIN</string>
+    <string name="Email">Email</string>
+    <string name="Pass">Password</string>
+    <string name="Register">Register</string>
+    <string name="Name">First Name*</string>
+    <string name="Personalemail">Personal Email*</string>
+    <string name="Mobileno">Mobile No.*</string>
+    <string name="Designation">Designation*</string>
+    <string name="Comapanyno">Company Landline No.</string>
+    <string name="Comapanyname">Company Name*</string>
+    <string name="Companyemail">Company Email</string>
+    <string name="Companyaddress">Company Address*</string>
+    <string name="Country">Country*</string>
+    <string name="State">State*</string>
+    <string name="City">City*</string>
+    <string name="Postalcode">Postal Code*</string>
+    <string name="Companywebsite">Company Website</string>
+    <string name="Newuser">New User? Register</string>
+    <string name="Forgotpassword">Forgot Password?</string>
+    <string name="Companyno">Company Landline No.</string>
+
+
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+    <string-array name="SubJobTYpe">
+        <item>First Half</item>
+        <item>Second Half</item>
+        <item>Weekends</item>
+
+    </string-array>
+
+    <string-array name="Currency">
+        <item>AFN</item>
+        <item>ALL</item>
+        <item>DZD</item>
+        <item>AOA</item>
+        <item>ARS</item>
+        <item>AMD</item>
+        <item>AWG</item>
+        <item>AZN</item>
+        <item>BSD</item>
+        <item>BHD</item>
+        <item>BDT</item>
+        <item>BBD</item>
+        <item>BYR</item>
+        <item>BZD</item>
+        <item>BMD</item>
+        <item>BTN</item>
+        <item>BOB</item>
+        <item>BAM</item>
+        <item>BWP</item>
+        <item>BRL</item>
+        <item>BND</item>
+        <item>BGN</item>
+        <item>BIF</item>
+        <item>KHR</item>
+        <item>CAD</item>
+        <item>CVE</item>
+        <item>KYD</item>
+        <item>CLP</item>
+        <item>CNY</item>
+        <item>COP</item>
+        <item>KMF</item>
+        <item>CDF</item>
+        <item>CRC</item>
+        <item>HRK</item>
+        <item>CUP</item>
+        <item>CZK</item>
+        <item>DJF</item>
+        <item>DOP</item>
+        <item>EGP</item>
+        <item>ERN</item>
+        <item>ETB</item>
+        <item>FKP</item>
+        <item>FJD</item>
+        <item>XAF</item>
+        <item>GMD</item>
+        <item>GEL</item>
+        <item>GHS</item>
+        <item>GIP</item>
+        <item>DKK</item>
+        <item>GTQ</item>
+        <item>GNF</item>
+        <item>GYD</item>
+        <item>HTG</item>
+        <item>HNL</item>
+        <item>HKD</item>
+        <item>HUF</item>
+        <item>ISK</item>
+        <item>INR</item>
+        <item>IDR</item>
+        <item>IRR</item>
+        <item>IQD</item>
+        <item>JMD</item>
+        <item>JPY</item>
+        <item>JOD</item>
+        <item>KZT</item>
+        <item>KES</item>
+        <item>KPW</item>
+        <item>KRW</item>
+        <item>KWD</item>
+        <item>KGS</item>
+        <item>LAK</item>
+        <item>LBP</item>
+        <item>LSL</item>
+        <item>LRD</item>
+        <item>LYD</item>
+        <item>LTL</item>
+        <item>MOP</item>
+        <item>MKD</item>
+        <item>MGA</item>
+        <item>MWK</item>
+        <item>MYR</item>
+        <item>MVR</item>
+        <item>MRO</item>
+        <item>MUR</item>
+        <item>MXN</item>
+        <item>MDL</item>
+        <item>MNT</item>
+        <item>MZN</item>
+        <item>MMK</item>
+        <item>NAD</item>
+        <item>NPR</item>
+        <item>NIO</item>
+        <item>NGN</item>
+        <item>OMR</item>
+        <item>PKR</item>
+        <item>ILS</item>
+        <item>PAB</item>
+        <item>PGK</item>
+        <item>PYG</item>
+        <item>PEN</item>
+        <item>PHP</item>
+        <item>PLN</item>
+        <item>QAR</item>
+        <item>RON</item>
+        <item>RUB</item>
+        <item>RWF</item>
+        <item>SHP</item>
+        <item>XCD</item>
+        <item>WST</item>
+        <item>STD</item>
+        <item>SAR</item>
+        <item>RSD</item>
+        <item>SCR</item>
+        <item>SLL</item>
+        <item>SGD</item>
+        <item>SBD</item>
+        <item>SOS</item>
+        <item>ZAR</item>
+        <item>SSP</item>
+        <item>LKR</item>
+        <item>SDG</item>
+        <item>SRD</item>
+        <item>NOK</item>
+        <item>SZL</item>
+        <item>SEK</item>
+        <item>CHF</item>
+        <item>SYP</item>
+        <item>TWD</item>
+        <item>TJS</item>
+        <item>TZS</item>
+        <item>THB</item>
+        <item>XOF</item>
+        <item>NZD</item>
+        <item>TOP</item>
+        <item>TTD</item>
+        <item>TND</item>
+        <item>TRY</item>
+        <item>TMT</item>
+        <item>AUD</item>
+        <item>UGX</item>
+        <item>UAH</item>
+        <item>AED</item>
+        <item>GBP</item>
+        <item>UYU</item>
+        <item>UZS</item>
+        <item>VUV</item>
+        <item>EUR</item>
+        <item>VEF</item>
+        <item>VND</item>
+        <item>USD</item>
+        <item>XPF</item>
+        <item>MAD</item>
+        <item>YER</item>
+        <item>ZMK</item>
+        <item>ZWL</item>
+    </string-array>
+
+</resources>

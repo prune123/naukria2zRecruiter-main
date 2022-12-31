@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="255sp"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true">
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50sp"
+                    android:text="Got the candidate?"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radio1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10sp"
+                    android:checkedButton="@id/radiob1"
+                    android:layout_marginRight="10sp"
+                    android:weightSum="2">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/radiob1"
+                        android:text="Yes"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No"
+                        android:id="@+id/radiob2"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/txt_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30sp"
+                    android:text="Any suggestions?"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radio2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:checkedButton="@id/radiob3"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes"
+                        android:id="@+id/radiob3"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No"
+                        android:id="@+id/radiob4"/>
+
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/suggestion"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:paddingLeft="8sp"
+                    android:paddingRight="8sp"
+                    android:hint="Suggest..."
+                    android:backgroundTint="@color/black"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    android:id="@+id/cancel"
+                    android:background="@color/black"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:id="@+id/dialogButtonOK"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:text="Remove" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_close"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:layout_alignTop="@+id/relativeLayout1"
+        android:backgroundTint="#F44336"
+        android:background="@drawable/ic_cancel" />
+
+</RelativeLayout>

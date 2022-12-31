@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.s3software.naukria2z_hiring">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Util.NotificationClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/abcd"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.EditActivity" />
+        <activity android:name=".Activity.ShowCandidate" />
+        <activity
+            android:name=".Auth.RecruiterDetail"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".Auth.RegisterActivity" />
+        <activity android:name=".Auth.LoginActivity" />
+        <activity
+            android:name=".Activity.AddPost"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.ProfileActivity" />
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.FeedbackActivity" />
+        <activity android:name=".Activity.VerificationWait" />
+    </application>
+
+</manifest>

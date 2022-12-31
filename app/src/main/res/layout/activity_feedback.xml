@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".FeedBackForm">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="5sp">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="I'm telling you about"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="10sp">
+
+            <RadioGroup
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp">
+
+                <RadioButton
+                    android:id="@+id/bug"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" A Bug"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginRight="5sp" />
+
+                <RadioButton
+                    android:id="@+id/enhancement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:text="An Enhancement"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginRight="5sp" />
+            </RadioGroup>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:padding="10sp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_marginTop="10sp"
+            app:cardCornerRadius="5sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp">
+
+            <EditText
+                android:id="@+id/data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fff"
+                android:hint="Please write here.." />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="60sp"
+            android:layout_marginRight="60sp"
+            android:background="@drawable/buttonround"
+            android:text="Submit"
+            android:textColor="#fff" />
+    </LinearLayout>
+</ScrollView>

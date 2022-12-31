@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Jobs"
+        android:enabled="true"
+        android:title="Jobs"
+        android:icon="@drawable/ic_jobs"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/Profile"
+        android:enabled="true"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="always" />
+    <item
+        android:enabled="false"
+        android:title="Add Job"
+        app:showAsAction="always"
+        android:checkable="false"
+        android:checked="false" />
+    <item
+        android:id="@+id/Support"
+        android:enabled="true"
+        android:icon="@drawable/ic_support"
+        android:title="Support"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/Notification"
+        android:enabled="true"
+        android:icon="@drawable/ic_wallet"
+        android:title="Account"
+        app:showAsAction="always" />
+</menu>

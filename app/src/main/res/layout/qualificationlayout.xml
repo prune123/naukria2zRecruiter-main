@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="255sp"
+        android:layout_height="340sp"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="10sp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="Highest Qualification*"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/qualification"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/spinner_bg"
+                android:spinnerMode="dropdown" />
+
+            <LinearLayout
+                android:id="@+id/oqual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Other Qualification"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/otherqualification"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_marginTop="5sp"
+                    android:isScrollContainer="true"
+                    android:background="@drawable/edittext_bg"
+                    android:padding="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="vertical"
+                android:id="@+id/streamlayout"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stream"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_marginTop="8sp"
+                    android:background="@drawable/edittext_bg"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:id="@+id/specilization">
+
+                    <TextView
+                        android:id="@+id/stream"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:paddingLeft="10sp"
+                        android:singleLine="false"
+                        android:isScrollContainer="true"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/getstream"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:background="@color/colorPrimaryDark"
+                        android:drawableLeft="@drawable/ic_expand_more"
+                        android:drawableTint="@color/white"
+                        android:paddingLeft="15sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/editstreamlayout">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Other Stream"
+                    android:textColor="@color/black" />
+                <EditText
+                    android:id="@+id/specilization3"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_marginTop="5sp"
+                    android:hint=""
+                    android:background="@drawable/edittext_bg"
+                    android:entries="@array/btech"
+                    android:padding="10sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:id="@+id/cancel"
+                    android:background="@color/black"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OK"
+                    android:textColor="@color/white"
+                    android:background="@color/colorPrimaryDark"
+                    android:id="@+id/submit"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_close"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:layout_alignTop="@+id/relativeLayout1"
+        android:backgroundTint="#F44336"
+        android:background="@drawable/ic_cancel" />
+
+</RelativeLayout>

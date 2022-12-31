@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="start"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    tools:context=".Activity.VerificationWait">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textColor="@color/darkblue"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="100dp"
+        android:text="Hello,your email isn't verified"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:text="Please verify your email -so that you can search jobs and apply them"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        android:text="Hit the button,If you haven't receive any email "/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend"
+        android:id="@+id/sendmail"
+        android:background="@drawable/buttonround"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="20sp"/>
+
+
+</LinearLayout>

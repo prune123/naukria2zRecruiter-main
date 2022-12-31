@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:background="@color/colorPrimaryDark"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:orientation="vertical"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            tools:context=".Activity.EditActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:text="Job Details"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:elevation="8sp"
+                android:layout_marginRight="20sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:text="Designation/Post"
+                        android:textColor="@color/darkblack"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/post"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:text="Country"
+                        android:textColor="@color/darkblack"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/country"
+                        android:layout_width="match_parent"
+                        android:editable="false"
+                        android:drawableTint="@color/black"
+                        android:drawableRight="@drawable/ic_edit"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:text="State"
+                        android:textColor="@color/darkblack"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:text="City"
+                        android:textColor="@color/darkblack"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:text="Salary"
+                        android:textColor="@color/darkblack"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/currency"
+                            android:editable="false"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/from"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <EditText
+                            android:id="@+id/to"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:text="Total Vacancy"
+                        android:textColor="@color/darkblack"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/vacancy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:text="About Work"
+                        android:textColor="@color/darkblack"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/aboutwork"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:text="Job Description"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:elevation="8sp"
+                android:layout_marginRight="20sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:text="Qualification"
+
+                        android:textColor="@color/darkblack"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/qualification"
+                        android:layout_width="match_parent"
+                        android:editable="false"
+                        android:drawableRight="@drawable/ic_edit"
+                        android:drawableTint="@color/black"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:text="Stream"
+                        android:textColor="@color/darkblack"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/specialisation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:text="Specialisation"
+                        android:textColor="@color/darkblack"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/extraspecialisation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:text="Experience"
+                        android:textColor="@color/darkblack"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/experience"
+                      android:editable="false"
+                        android:drawableRight="@drawable/ic_edit"
+                        android:drawableTint="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:text="Job Type"
+                        android:textColor="@color/darkblack"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/jobtype"
+                        android:editable="false"
+                        android:drawableRight="@drawable/ic_edit"
+                        android:drawableTint="@color/black"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:text="Software Knowledge"
+                        android:textColor="@color/darkblack"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/softwareknowledge"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:text="Industry Type"
+                        android:textColor="@color/darkblack"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/category"
+                        android:editable="false"
+                        android:drawableRight="@drawable/ic_edit"
+                        android:drawableTint="@color/black"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:text="Company Details"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20sp"
+                android:elevation="8sp"
+                android:layout_marginRight="20sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginBottom="20sp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:text="Company Name"
+                        android:textColor="@color/darkblack"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cname"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20sp"
+                        android:text="Company Website"
+                        android:textColor="@color/darkblack"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cwebsite"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp">
+
+        <Button
+            android:id="@+id/updatejob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/buttonround"
+            android:text="Update Post"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+</RelativeLayout>
